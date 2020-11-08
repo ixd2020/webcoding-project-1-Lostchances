@@ -1,34 +1,11 @@
-* {
-    box-sizing: border-box
-}
+/* CSS files add styling rules to your content */
 
 body {
-    margin: 20px;
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
 }
 
 h1 {
-    color: crimson;
-}
-
-h4 {
-    color: blueviolet;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th,td {
-    padding: 5px;
-    text-align: left;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: coral;
-    transition-duration: .5s
+  font-style: italic;
+  color: #373fff;
 }
