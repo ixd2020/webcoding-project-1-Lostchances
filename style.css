@@ -1,99 +1,426 @@
-/* CSS files add styling rules to your content */
-
-/* CSS files add styling rules to your content */
-
 * {
+    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.1);
-    background-blend-mode: multiply;
-    background-image: url("images/cool-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Lato, sans-serif;
+    background-color: #000000;
 }
 
-.box {
+/*Fonts & Links*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #bcbcbc;
+    transition: 0.3s ease;
+}
+
+h1 {
+    user-select: none;
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    user-select: none;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    user-select: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*Column Settings*/
+.col-1 {
+    width: 100%;
     float: left;
-    padding: 50px;
-    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.col-2 {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.col-3 {
+    width: 33.33%;
+    float: left;
+    overflow: hidden;
+}
+
+.col-4 {
+    width: 25%;
+    float: left;
+    overflow: hidden;
 }
 
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+/*Background for landing page*/
+.background3 {
+    height: 100vh;
+    background-image: url(https://cdn.glitch.com/f2a00f83-6a47-41eb-b05b-ffe3d92fc893%2FDSC_7827-R-Corr-1980x1317.jpg?v=1606880459193);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
 }
 
-.redbox {
-    background-color: red;
+/*Animated Text*/
+.animatedtext {
+    position: absolute;
+    top: 250px;
+    left: 150px;
 }
 
-.bluebox {
-    background-color: blue;
+.animatedtext2 {
+    position: absolute;
+    top: 300px;
+    left: 850px;
 }
 
-.yellowbox {
-    background-color: yellow;
+.animatedtext3 {
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
 }
 
-.greenbox {
-    background-color: green;
+.animatedimage img {
+    overflow: hidden;
+    position: absolute;
+    left: 800px;
+    top: 75px;
 }
 
-.aquabox {
-    background-color: aqua;
+.animatedimage2 img {
+    overflow: hidden;
+    position: absolute;
+    left: 145px;
+    top: 75px;
 }
 
-.coralbox {
-    background-color: coral;
+.animatedtext4 {
+    position: absolute;
+    top: 250px;
+    left: 150px;
 }
 
-.onecol {
+.cssanimation,
+.cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+    display: inline-block
+}
+
+.fadeInBottom {
+    animation-name: fadeInBottom
+}
+
+.fadeInBottom2 {
+    animation-delay: 0.3s;
+    animation-name: fadeInBottom2;
+}
+
+.fadeInBottom3 {
+    animation-delay: 0.6s;
+    animation-name: fadeInBottom3;
+}
+
+.fadeInBottom4 {
+    animation-delay: 0.2s;
+    animation-name: fadeInBottom4;
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInBottom2 {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInBottom3 {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInBottom4 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInBottom5 {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+/*Navbars*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar li a {
+    user-select: none;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 25px 0px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-stretch: expanded;
+}
+
+.navbar li a:hover {
+    color: #a1a1a1;
+
+    transition: 0.3s ease;
+}
+
+.icon {
+    display: none;
+}
+
+/*Main Body*/
+section {}
+
+/*Work Page*/
+.work-class-img {
     width: 100%;
 }
 
-.twocol {
+.content-image {
     width: 50%;
+    background-image: url(images/vert-img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
 }
 
-.threecol {
-    width: 33.33%;
+.img1 {
+    width: 50%;
+    background-image: url(images/vert-img-1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
 }
 
-/*Button*/
-button {
-    background-color: aquamarine;
+.img2 {
+    width: 50%;
+    background-image: url(images/vert-img-2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
+}
+
+.image-text {
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.img1:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    transition: 0.4s;
+}
+
+.img2:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    transition: 0.4s;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    font-family: sans-serif;
+}
+
+.overlayFade {
+    height: 100%;
+    width: 100%;
+    top: 500px;
+    left: 0;
+    background-color: #ff946bbd;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #008cba;
+}
+
+.img1:hover .overlay,
+..img1:hover .overlayFade {
+    opacity: 1;
+}
+
+/*Contact Page*/
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+}
+
+.box-main-2 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-sub {
+    display: block;
+    width: 40%;
+}
+
+.contact-sub-box {
+    display: block;
+    width: 100%;
+    margin-right: 10px;
+}
+    
+.contact-sub-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-title {
+    margin: 0px 0px 0px 15pxpx;
+}
+
+.form p {
+    margin: 0px 0px 10px 0px;
+}
+
+.form-title {
+    margin: 15px 0px 10px 0px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    background-color: transparent;
+    border: 2px solid #999999;
     border-radius: 5px;
-    border: none;
-    padding: 10px 15px 10px 15px;
-    font-size: 18px;
+    color: white;
 }
 
-button:hover {
-    background-color: coral;
-    color: black;
-    transition: ease-in 0.2s;
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #999999;
+    resize: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
 }
 
-.important {
-  font-weight: bold;
-  font-size: large;
+input[type=submit] {
+    color: #fff;
+    border: 2px solid #999999;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 12px 32px 12px 32px;
+    border-radius: 5px;
 }
 
-.blue {
-  color: blue;
+input[type=submit]:hover {
+    color: #000000;
+    background-color: #999999;
+    transition: 0.3s ease;
 }
 
-.pink {
-  color: pink;
+/*Footer Code*/
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-@media screen and (max-width:800px) {
-  .onecol, .twocol, .threecol {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
