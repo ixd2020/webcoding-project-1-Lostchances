@@ -13,12 +13,15 @@
 
     <!--import Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
     <h2>Grid of Boxes</h2>
     <p>Float boxes side by side:</p>
+
+    <img src="images/Among%20Us%20w%20bg.png" width="100%">
 
     <div class="clearfix">
         <div class="box redbox onecol">
@@ -46,6 +49,51 @@
 
     <a href="https://www.youtube.com/watch?v=_c1NJQ0UP_Q&ab_channel=billwurtz"><button>Hello</button></a>
 
+    <h2 class="head01">This is a heading</h2>
+
+    <p class="para001" style="background-color:#ff0000">This is a paragraph.</p>
+    <p class="para001" style="background-color:#00ff00">This is a paragraph.</p>
+    <p class="para001" style="background-color:#0000ff">This is a paragraph.</p>
+
+    <p>This is a paragraph.</p>
+
+    <button>Set multiple styles for p</button>
+
+
+    <hr>
+
+    <h1 class="head02">Heading 1</h1>
+    <h2 class="head02">Heading 2</h2>
+
+    <p class="para02">This is a paragraph.</p>
+    <p class="para02">This is another paragraph.</p>
+
+    <div class="iptext">This is some important text!</div><br>
+
+    <button>Add classes to elements</button>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p.para001").css({
+                    "background-color": "yellow",
+                    "font-size": "200%"
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("h1.head02, h2.head02, p.para02").addClass("blue");
+                $("div.iptext").addClass("important");
+            });
+        });
+
+    </script>
 </body>
 
 </html>
+

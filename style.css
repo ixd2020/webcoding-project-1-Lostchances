@@ -1,5 +1,7 @@
 /* CSS files add styling rules to your content */
 
+/* CSS files add styling rules to your content */
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +9,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
-    background-image: url("https://cdn.glitch.com/4bf38d34-bfa7-4340-a624-2ecb25c610a6%2Fcool-background.png?v=1605066708124");
+    background-image: url("images/cool-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Lato, sans-serif;
@@ -67,8 +69,8 @@ button {
     background-color: aquamarine;
     border-radius: 5px;
     border: none;
-    padding: 20px 20px 20px 20px;
-    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;
 }
 
 button:hover {
@@ -77,3 +79,21 @@ button:hover {
     transition: ease-in 0.2s;
 }
 
+.important {
+  font-weight: bold;
+  font-size: large;
+}
+
+.blue {
+  color: blue;
+}
+
+.pink {
+  color: pink;
+}
+
+@media screen and (max-width:800px) {
+  .onecol, .twocol, .threecol {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
