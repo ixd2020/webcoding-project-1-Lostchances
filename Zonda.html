@@ -1,0 +1,122 @@
+<!--Start Of Document-->
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horacio Pagani</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+
+<!--Navbar start-->
+<div class="background" id="zonda">
+    <nav id="topNav" class="myNav">
+
+        <div class="logo">
+            <a href="index.html"><img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2FPagani_logo.svg?v=1608080757106"></a>
+        </div>
+
+
+        <!--Navbar goes here-->
+        <ul class="navbar">
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="works.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="scrolldown-wrapper">
+        <div class="scrolldown">
+            <svg height="30" width="10">
+                <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            </svg>
+        </div>
+    </div>
+
+    <!--Animated Text goes here-->
+    <div class="animatedtext">
+        <h1 class="cssanimation sequence fadeInBottom" style="letter-spacing: 10px;text-align: center;font-weight: 500;color: #fff">ZONDA</h1>
+    </div>
+</div>
+
+<body>
+<section id="car-page">
+    <div class="car-desc">
+
+        <div class="car-desc-text">
+            <p>A passionate original work with an obsessive attention to detail characterize the reality of Horacio Pagani’s dream,<br> where every detail has meaning and is proudly displayed by a completely openable structure. Pagani proudly celebrates the first 20 years of the Zonda.</p>
+        </div>
+
+    </div>
+
+    <div class="car-work-desc">
+
+        <div class="workschild">
+            <a class="workimage" href="images/zonda-gallery-1.jpg" data-fancybox="images-preview" data-caption="Zonda C12" data-thumbs='{"autoStart":true}'>
+                <img src="images/zonda-gallery-thumbnail.jpg" />
+            </a>
+
+
+            <div style="display: none;">
+                <a href="images/zonda-gallery-2.jpg" data-fancybox="images-preview" data-caption="Zonda F"></a>
+                
+                <a href="images/zonda-gallery-3.jpg" data-fancybox="images-preview" data-caption="Zonda Cinque"></a>
+                
+                <a href="images/zonda-gallery-4.jpg" data-fancybox="images-preview" data-caption="Zonda Tricolore"></a>
+                
+                <a href="images/zonda-gallery-5.jpg" data-fancybox="images-preview" data-caption="Zonda 760 LH"></a>
+                
+                <a href="images/zonda-gallery-6.jpg" data-fancybox="images-preview" data-caption="Zonda R"></a>
+                
+                <a href="images/zonda-gallery-7.jpg" data-fancybox="images-preview" data-caption="Zonda Revelocion"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="iconset">
+        <a href="https://www.instagram.com/paganiautomobili/?hl=en" target="_blank"><span class="iconic icon-ins"></span></a>
+
+        <a href="https://t.me/ismekynan" target="_blank"><span class="iconic icon-fb"></span></a>
+
+        <a href="https://twitter.com/OfficialPagani?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><span class="iconic icon-tw"></span></a>
+    </div>
+
+    <ul class="navbar2">
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="works.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <p><span style="color:#6f6f6e;font-size: 15px">©Horacio Pagani 2020</span></p>
+</footer>
+
+
+
+<!--JavaScripts-->
+<script>
+    window.onscroll = () => {
+        const nav = document.querySelector('nav');
+        if (this.scrollY < 800) nav.className = '';
+        else nav.className = 'scroll';
+    };
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<script src="jquery.fancybox.min.js"></script>
+</body>
+
+</html>
+<!--End of Document-->

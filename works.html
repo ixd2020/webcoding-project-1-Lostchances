@@ -1,6 +1,5 @@
 <!--Start Of Document-->
 <!DOCTYPE HTML>
-
 <html lang="en-US">
 
 <head>
@@ -8,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horacio Pagani</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/f0004e016b.js" crossorigin="anonymous"></script>
 </head>
 
 <!--Navbar start-->
-<div class="background3" id="top">
+  <div class="background">
+
     <nav id="topNav" class="myNav">
 
         <div class="logo">
-            <a href="Landing%20Page.html"><img src="https://cdn.glitch.com/f2a00f83-6a47-41eb-b05b-ffe3d92fc893%2FPagani_logo.svg?v=1606880456950" width="65%"></a>
+            <a href="index.html"><img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2FPagani_logo.svg?v=1608080757106"></a>
         </div>
+
 
         <!--Navbar goes here-->
         <ul class="navbar">
@@ -29,58 +28,39 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
+  </div>
+  <body>
+    <main>
+        <div class="work-feature">
+            <img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fvert-img-1.jpg?v=1608080764073" alt="Avatar" class="work-image">
+            <a href="Zonda.html">
+                <div class="overlay">
+                    <div class="work-text" style="letter-spacing: 2px;font-size: 25px">ZONDA</div>
+                </div>
+            </a>
+        </div>
+        <div class="work-feature">
+            <img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fvert-img-2.jpg?v=1608080759318" alt="Avatar" class="work-image">
+            <a href="Huayra.html">
+                <div class="overlay">
+                    <div class="work-text" style="letter-spacing: 2px;font-size: 25px">HUAYRA</div>
+                </div>
+            </a>
+        </div>
+    </main>
 
-    <!--Animated Text goes here-->
-    <div class="animatedtext3">
-        <h1 class="cssanimation sequence fadeInBottom">Hello!</h1>
-        <h1 class="cssanimation sequence fadeInBottom2">Let's Get In Touch!</h1>
-    </div>
-</div>
 
-<!--Details Part-->
-<section>
-    <div class="box-main-2">
-        <a href="zonda.html">
-            <div class="img1">
-                <div class="text">Bottom</div>
-            </div>
-        </a>
 
-        <a href="huayra.html">
-            <div class="img2">
-                <div class="image-text">HUAYRA</div>
-            </div>
-        </a>
-    </div>
-</section>
+    <!--JavaScripts-->
+    <script>
+        window.onscroll = () => {
+            const nav = document.querySelector('nav');
+            if (this.scrollY < 800) nav.className = '';
+            else nav.className = 'scroll';
+        };
 
-<!--Footer goes here-->
-<footer>
-    <p><span style="color:#fff;font-size: 15px">© Horacio Pagani</span></p>
-
-    <!-- 
-    <div class="iconset">
-        <a href="https://www.instagram.com/kynandesign/" target="_blank"><span class="iconic icon-ins"></span></a>
-
-        <a href="https://t.me/ismekynan" target="_blank"><span class="iconic icon-tele"></span></a>
-
-        <a href="mailto:taykynan@gmail.com" target="_blank"><span class="iconic icon-email"></span></a>
-    </div>
-    -->
-</footer>
-
-<!--Javascript-->
-<script>
-    function myFunction() {
-        var x = document.getElementById("topNav");
-        if (x.className === "myNav") {
-            x.className += " responsive";
-        } else {
-            x.className = "myNav";
-        }
-    }
-
-</script>
+    </script>
+    </body>
 
 </html>
-<!--End of document-->
+<!--End of Document-->
