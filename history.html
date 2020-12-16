@@ -72,7 +72,15 @@
                 </p>
             </div>
         </div>
-        <img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fhistory-page-image.jpg?v=1608080773557" id="image-reveal">
+        <div class="old">
+            <img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fhistory-page-image.jpg?v=1608080773557" >
+        </div>
+          
+           <div class="young">
+            <img src="https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fhistory-page-image-young.jpg?v=1608086965558">
+        </div>
+
+        <button id="dom">Next</button>
     </div>
 </section>
 
@@ -103,6 +111,25 @@
         if (this.scrollY < 800) nav.className = '';
         else nav.className = 'scroll';
     };
+
+</script>
+  
+  <script>
+    $(document).ready(function() {
+        $("#dom").click(function() {
+            $(".old").css({
+                "display": "none",
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        $("#dom").click(function() {
+            $(".young").css({
+                "display": "contents",
+            });
+        });
+    });
 
 </script>
 </body>

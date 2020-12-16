@@ -103,7 +103,7 @@ button:hover {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     position: absolute;
 }
 
@@ -128,17 +128,12 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#works {
-    background-image: url(images/bg-04.png);
-}
-
-
 #zonda {
     background-image: url(https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fbg-05.jpg?v=1608080766448);
 }
 
 #huayra {
-    background-image: url(https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fbg-07.jpg?v=1608080768865;
+    background-image: url(https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Fbg-07.jpg?v=1608080768865);
     background-position: bottom;
 }
 
@@ -402,6 +397,20 @@ nav.scroll {
 }
 
 /*History Page*/
+#dom {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.young {
+    display: none;
+}
+
 .history-group img {
     width: 800px;
     height: 400px;
@@ -607,7 +616,7 @@ footer {
 }
 
 .icon-fb {
-    background-image: url(images/https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Ffacebook-footer.svg?v=1608080755972);
+    background-image: url(https://cdn.glitch.com/7dc9f863-59d1-4d61-bcba-1502d58844eb%2Ffacebook-footer.svg?v=1608080755972);
     background-repeat: no-repeat;
     margin: 5px 15px 5px 15px;
 }
@@ -781,4 +790,3 @@ footer {
     .contact-right p {
         margin-bottom: 25px;
     }
-
